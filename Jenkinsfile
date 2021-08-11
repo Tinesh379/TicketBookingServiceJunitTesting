@@ -2,7 +2,7 @@ pipeline {
     agent {
     node {
         label 'build-node-1'
-        customWorkspace 'D:/Jenkins/Local-Node'
+        
     }
 }
     stages {
