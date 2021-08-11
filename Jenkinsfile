@@ -1,5 +1,5 @@
 pipeline {
-    agent any
+    agent aws-ubuntu-jenkins-node
     stages {
         stage('git repo & clean') {
             steps {
