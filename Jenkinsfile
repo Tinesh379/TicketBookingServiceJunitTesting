@@ -1,5 +1,10 @@
 pipeline {
-    agent {'build-node-1'}
+    agent {
+    node {
+        label 'build-node-1'
+        customWorkspace 'D:/Jenkins/Local-Node'
+    }
+}
     stages {
         stage('git repo & clean') {
             steps {
