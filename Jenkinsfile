@@ -1,10 +1,6 @@
 pipeline {
-    agent {
-    node {
-        label 'build-node-1'
-        
-    }
-}
+    agent any
+    
     stages {
         stage('git repo & clean') {
             steps {
